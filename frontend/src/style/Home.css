@@ -1,0 +1,84 @@
+@import "../App.css";
+
+.homepage{
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+}
+.travelHomepage{
+    width: 100%;
+    box-shadow: rgba(38, 70, 83, 0.4) 0px 2px 8px 0px;
+}
+.introHomepage{
+    border-bottom: 1px solid #264653;
+}
+.titleHomepage{
+    margin-top: .2em;
+    color: #264653;
+    font-family: "Mukta";
+    font-style: italic;
+    font-size: 3em;
+    font-weight:bold;
+    text-align: center;
+}
+.intro1Homepage{
+    font-weight: bold;
+}
+.intro2Homepage{
+    margin-top: .2em;
+    text-align: end;
+    font-weight: bold;
+}
+.intro3Homepage{
+    margin: .7em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.choiceHomepage{
+    display: flex;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+.choice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+.imgChoice{
+    margin-bottom: 1em;
+    width: 80%;
+    box-shadow: rgba(38, 70, 83, 0.4) 0px 2px 8px 0px;
+}
+
+@media screen and (min-width: 767.98px){
+    .introHomepage{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2em;
+        padding-bottom: 2.5em;
+        
+    }
+    .travelHomepage{
+        width: 50%;
+    }
+    .prezHomepage{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 1em;
+    }
+    .choiceHomepage{
+        padding-top: 2.5em;
+    }
+    .imgChoice:hover{
+        cursor: pointer;
+    }
+    .pChoice:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}

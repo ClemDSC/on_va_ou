@@ -7,13 +7,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.App-header {
-  background-color: #282c34;
+.App {
+  background-color: rgba(233, 197, 106, 0.85);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+@font-face {
+  font-family: "Mukta";
+  font-weight: normal;
+  src: local("Mukta Vaani"),
+    url("../assets/fonts/Mukta-Vaani.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito";
+  font-weight: normal;
+  src: local("Nunito"),
+    url("../assets/fonts/Nunito.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Source";
+  font-weight: normal;
+  src: local("Source-Sans-Pro"),
+    url("../assets/fonts/Source-Sans-Pro.ttf") format("truetype");
+}
+h1{
+  margin: 0;
+}
+p{
+  color: #264653;
+  font-family: "Mukta";
+  margin: 0;
 }
