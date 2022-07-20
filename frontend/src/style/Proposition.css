@@ -1,0 +1,11 @@
+.pageProposition {
+  display: flex;
+  flex-direction: column;
+}
+.hikerman {
+  width: 100%;
+}
+.formProposition {
+  display: flex;
+  flex-direction: column;
+}

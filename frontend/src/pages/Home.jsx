@@ -28,8 +28,10 @@ export default function Home() {
           </Link>
         </div>
         <div className="choice">
-          <img className="imgChoice" src={Traveler2} alt="traveler" />
-          <p className="pChoice">Je propose une destination</p>
+          <Link to="/proposition">
+            <img className="imgChoice" src={Traveler2} alt="traveler" />
+            <p className="pChoice">Je propose une destination</p>
+          </Link>
         </div>
       </section>
     </div>
