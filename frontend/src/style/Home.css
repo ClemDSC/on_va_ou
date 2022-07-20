@@ -7,6 +7,10 @@
 }
 .travelHomepage{
     width: 100%;
+    box-shadow: rgba(38, 70, 83, 0.4) 0px 2px 8px 0px;
+}
+.introHomepage{
+    border-bottom: 1px solid #264653;
 }
 .titleHomepage{
     margin-top: .2em;
@@ -33,6 +37,8 @@
 }
 .choiceHomepage{
     display: flex;
+    padding-top: 2em;
+    padding-bottom: 1em;
 }
 .choice{
     display: flex;
@@ -42,5 +48,37 @@
     font-weight: bold;
 }
 .imgChoice{
+    margin-bottom: 1em;
     width: 80%;
+    box-shadow: rgba(38, 70, 83, 0.4) 0px 2px 8px 0px;
+}
+
+@media screen and (min-width: 767.98px){
+    .introHomepage{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2em;
+        padding-bottom: 2.5em;
+        
+    }
+    .travelHomepage{
+        width: 50%;
+    }
+    .prezHomepage{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 1em;
+    }
+    .choiceHomepage{
+        padding-top: 2.5em;
+    }
+    .imgChoice:hover{
+        cursor: pointer;
+    }
+    .pChoice:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }

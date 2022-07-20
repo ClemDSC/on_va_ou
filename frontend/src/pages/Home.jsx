@@ -22,11 +22,11 @@ export default function Home() {
       <section className="choiceHomepage">
         <div className="choice">
           <img className="imgChoice" src={Traveler1} alt="traveler" />
-          <p>Je cherche une idée</p>
+          <p className="pChoice">Je cherche une idée</p>
         </div>
         <div className="choice">
           <img className="imgChoice" src={Traveler2} alt="traveler" />
-          <p>Je propose une destination</p>
+          <p className="pChoice">Je propose une destination</p>
         </div>
       </section>
     </div>
