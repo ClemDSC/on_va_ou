@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model destination {
+  id          Int     @id @default(autoincrement())
+  continent   String  @db.VarChar(255)
+  pays        String  @db.VarChar(255)
+  ville       String? @db.VarChar(255)
+  langue      String  @db.VarChar(255)
+  devise      String  @db.VarChar(255)
+  description String  @db.VarChar(1000)
+  objet       objet?  @relation(fields: [objId], references: [id])
+  objId       Int?
+}
+
+model objet {
+  id          Int           @id @default(autoincrement())
+  nom         String        @db.VarChar(255)
+  categorie   String        @db.VarChar(255)
+  saisonnier  Boolean       @default(false)
+  destination destination[]
+}
