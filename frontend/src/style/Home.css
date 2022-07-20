@@ -1,0 +1,46 @@
+@import "../App.css";
+
+.homepage{
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+}
+.travelHomepage{
+    width: 100%;
+}
+.titleHomepage{
+    margin-top: .2em;
+    color: #264653;
+    font-family: "Mukta";
+    font-style: italic;
+    font-size: 3em;
+    font-weight:bold;
+    text-align: center;
+}
+.intro1Homepage{
+    font-weight: bold;
+}
+.intro2Homepage{
+    margin-top: .2em;
+    text-align: end;
+    font-weight: bold;
+}
+.intro3Homepage{
+    margin: .7em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.choiceHomepage{
+    display: flex;
+}
+.choice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+.imgChoice{
+    width: 80%;
+}
