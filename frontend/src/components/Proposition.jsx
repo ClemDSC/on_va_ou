@@ -17,7 +17,7 @@ export default function Proposition() {
   const [description, setDescription] = useState("");
   const [nom, setNom] = useState("");
   const [categorie, setCategorie] = useState("");
-  const [saisonnier, setSaisonnier] = useState("");
+  const [saisonnier, setSaisonnier] = useState(false);
 
   const navigate = useNavigate();
   const ToastProposition = () => toast.success("Proposition enregistrée !");
@@ -106,7 +106,7 @@ export default function Proposition() {
           :
         </p>
         <label htmlFor="description">
-          <textarea
+          <input
             className="input"
             type="text"
             name="description"

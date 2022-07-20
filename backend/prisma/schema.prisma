@@ -21,7 +21,7 @@ model destination {
 
 model objet {
   id          Int           @id @default(autoincrement())
-  nom         String        @db.VarChar(255)
+  nom         String        @unique @db.VarChar(255)
   categorie   String        @db.VarChar(255)
   saisonnier  Boolean       @default(false)
   destination destination[]
