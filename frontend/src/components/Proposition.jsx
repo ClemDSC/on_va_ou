@@ -15,9 +15,9 @@ export default function Proposition() {
   const [langue, setLangue] = useState("");
   const [devise, setDevise] = useState("");
   const [description, setDescription] = useState("");
-  const [nom, setNom] = useState("");
-  const [categorie, setCategorie] = useState("");
-  const [saisonnier, setSaisonnier] = useState(false);
+  const [objnom, setNom] = useState("");
+  const [objcategorie, setCategorie] = useState("");
+  const [objsaisonnier, setSaisonnier] = useState(false);
 
   const navigate = useNavigate();
   const ToastProposition = () => toast.success("Proposition enregistrée !");
@@ -34,9 +34,9 @@ export default function Proposition() {
           langue,
           devise,
           description,
-          nom,
-          categorie,
-          saisonnier,
+          objnom,
+          objcategorie,
+          objsaisonnier,
         })
         .then(() => {
           ToastProposition();
