@@ -10,7 +10,6 @@ export default function Home() {
       <section className="introHomepage">
         <img className="travelHomepage" src={Travel} alt="traveler" />
         <div className="prezHomepage">
-          <h1 className="titleHomepage">On va où ?</h1>
           <p className="intro1Homepage">
             Tu as besoin de vacances mais tu ne sais pas où aller ?
           </p>

@@ -6,20 +6,12 @@
     padding: .5em;
 }
 .travelHomepage{
+    margin-bottom: .5em;
     width: 100%;
     box-shadow: rgba(38, 70, 83, 0.4) 0px 2px 8px 0px;
 }
 .introHomepage{
     border-bottom: 1px solid #264653;
-}
-.titleHomepage{
-    margin-top: .2em;
-    color: #264653;
-    font-family: "Mukta";
-    font-style: italic;
-    font-size: 3em;
-    font-weight:bold;
-    text-align: center;
 }
 .intro1Homepage{
     font-weight: bold;
@@ -57,9 +49,8 @@
     .introHomepage{
         display: flex;
         justify-content: space-around;
-        padding-top: 2em;
-        padding-bottom: 2.5em;
-        
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
     }
     .travelHomepage{
         width: 50%;
@@ -72,7 +63,7 @@
         margin: 1em;
     }
     .choiceHomepage{
-        padding-top: 2.5em;
+        padding-top: 1.5em;
     }
     .imgChoice:hover{
         cursor: pointer;
