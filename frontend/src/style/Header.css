@@ -1,0 +1,29 @@
+.divHeader{
+    display: flex;
+    justify-content: space-between;
+    background-color: #264653;
+}
+
+.logoHeader{
+    height: 3em;
+    margin-top: .5em;
+    margin-left: 1em;
+    cursor: pointer;
+}
+.titleHomepage{
+    color: #E9C46A;
+    font-family: "Mukta";
+    font-size: 2.5em;
+    font-weight:bold;
+    text-align: center;
+    margin-right: 1em;
+}
+
+@media screen and (min-width: 767.98px){
+    .logoHeader{
+        margin-left: 1.5em;
+    }
+    .titleHomepage{
+        margin-right: 2em;
+    }
+}
