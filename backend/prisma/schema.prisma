@@ -15,13 +15,13 @@ model destination {
   langue      String  @db.VarChar(255)
   devise      String  @db.VarChar(255)
   description String  @db.VarChar(1000)
-  objet       objet?  @relation(fields: [objId], references: [id])
   objId       Int?
+  objet       objet?  @relation(fields: [objId], references: [id], onDelete: Cascade, onUpdate: Cascade)
 }
 
 model objet {
   id          Int           @id @default(autoincrement())
-  nom         String        @db.VarChar(255)
+  nom         String        @unique @db.VarChar(255)
   categorie   String        @db.VarChar(255)
   saisonnier  Boolean       @default(false)
   destination destination[]

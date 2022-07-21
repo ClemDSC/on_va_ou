@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Travel from "../assets/travel.jpg";
 import Traveler1 from "../assets/traveler1.jpg";
 import Traveler2 from "../assets/traveler2.jpg";
@@ -21,12 +22,16 @@ export default function Home() {
       </section>
       <section className="choiceHomepage">
         <div className="choice">
-          <img className="imgChoice" src={Traveler1} alt="traveler" />
-          <p className="pChoice">Je cherche une idée</p>
+          <Link to="/destination">
+            <img className="imgChoice" src={Traveler1} alt="traveler" />
+            <p className="pChoice">Je cherche une idée</p>
+          </Link>
         </div>
         <div className="choice">
-          <img className="imgChoice" src={Traveler2} alt="traveler" />
-          <p className="pChoice">Je propose une destination</p>
+          <Link to="/proposition">
+            <img className="imgChoice" src={Traveler2} alt="traveler" />
+            <p className="pChoice">Je propose une destination</p>
+          </Link>
         </div>
       </section>
     </div>
