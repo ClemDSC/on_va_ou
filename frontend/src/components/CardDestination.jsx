@@ -9,6 +9,11 @@ export default function CardDestination({ destination }) {
           {destination.pays} ({destination.ville})
         </h4>
       </div>
+      <img
+        className="picCard"
+        src={destination.photo}
+        alt={destination.ville}
+      />
       <div className="card-bio">
         <p className="descriptionCard">🤔 Dans ce pays, on parle :</p>
         <p className="reponseCard">{destination.langue}</p>

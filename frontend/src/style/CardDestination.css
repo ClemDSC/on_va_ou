@@ -3,7 +3,7 @@
 .divCardDestindation{
     display: flex;
     flex-direction: column;
-    padding-bottom: 0.5em;
+    padding: 0 0.5em 0.5em 0.5em;
     background-color: rgb(38, 70, 83);
     border-radius: 5px;
     box-shadow: rgba(38, 70, 83, 0.815) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;

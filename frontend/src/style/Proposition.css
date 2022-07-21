@@ -49,6 +49,9 @@
   flex-direction: column;
   align-items: center;
 }
+.sousdivLieu{
+  text-align: center;
+}
 .divLangDeviseUnique,
 .divObjetUnit {
   display: flex;
@@ -76,9 +79,14 @@
   .divLieu {
     flex-direction: row;
     justify-content: center;
-    gap: 0.5em;
+    gap: 2.5em;
     border-bottom: 1px solid #264653;
     padding-bottom: 1em;
+  }
+  .sousdivLieu{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
   }
   .divLangDevise {
     flex-direction: row;
@@ -98,7 +106,7 @@
     width: 45%;
   }
   .input {
-    width: 30vw;
+    width: 40vw;
     height: 2.5em;
   }
   .input2 {
