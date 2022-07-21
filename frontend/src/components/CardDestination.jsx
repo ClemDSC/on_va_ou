@@ -1,11 +1,22 @@
 import "../style/CardDestination.css";
 /* eslint-disable react/prop-types */
 import axios from "axios";
+import { useState } from "react";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import Modal from "react-modal";
+
+Modal.setAppElement("#root");
+
 export default function CardDestination({ destination }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleModal() {
+    setIsOpen(!isOpen);
+  }
+
   const ToastDeleteDestination = () => toast.success("Destination supprimée !");
   const deleteDestination = (e) => {
     e.preventDefault();
@@ -46,7 +57,19 @@ export default function CardDestination({ destination }) {
         className="btnPut"
         type="submit"
         value="Modifier cette destination"
+        onClick={toggleModal}
       />
+      <Modal
+        isOpen={isOpen}
+        // eslint-disable-next-line react/jsx-no-bind
+        onRequestClose={toggleModal}
+        contentLabel="Modifier cette destination"
+      >
+        <div>Modifier cette destination.</div>
+        <button type="button" onClick={toggleModal}>
+          ☓
+        </button>
+      </Modal>
       <input
         className="btnDel"
         type="submit"
