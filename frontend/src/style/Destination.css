@@ -4,6 +4,16 @@
   margin-left: 2em;
   margin-right: 2em;
 }
+
+/* Partie filtre */ 
+
+.divFilter{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Partie Card */ 
+
 .listCards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
