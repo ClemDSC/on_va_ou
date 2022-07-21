@@ -55,15 +55,6 @@
   flex-direction: column;
   align-items: center;
 }
-.divcheckbox {
-  display: flex;
-  align-items: center;
-}
-.inputCheckbox {
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  margin-left: 1em;
-}
 .inputButton {
   border: none;
   border-radius: 5px;
@@ -73,7 +64,7 @@
   color: whitesmoke;
   font-weight: bold;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  margin-top: 1em;
+  margin-top: 2em;
   margin-bottom: 2.5em;
 }
 
@@ -117,12 +108,8 @@
   .input3 {
     height: 2.5em;
   }
-  .divcheckbox {
-    padding-bottom: 0.5em;
-  }
   .divButt {
     padding-top: 1.5em;
-    border-top: 1px solid #264653;
   }
   .inputButton {
     margin-top: 0;

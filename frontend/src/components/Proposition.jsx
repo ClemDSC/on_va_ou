@@ -15,9 +15,8 @@ export default function Proposition() {
   const [langue, setLangue] = useState("");
   const [devise, setDevise] = useState("");
   const [description, setDescription] = useState("");
-  const [nom, setNom] = useState("");
-  const [categorie, setCategorie] = useState("");
-  const [saisonnier, setSaisonnier] = useState(false);
+  const [objnom, setNom] = useState("");
+  const [objcategorie, setCategorie] = useState("");
 
   const navigate = useNavigate();
   const ToastProposition = () => toast.success("Proposition enregistrée !");
@@ -34,12 +33,11 @@ export default function Proposition() {
           langue,
           devise,
           description,
-          nom,
-          categorie,
-          saisonnier,
+          objnom,
+          objcategorie,
         })
+        .then(() => ToastProposition())
         .then(() => {
-          ToastProposition();
           navigate("/destination");
         });
     } catch (error) {
@@ -88,7 +86,7 @@ export default function Proposition() {
         </div>
         <div className="divLangDevise">
           <div className="divLangDeviseUnique">
-            <p className="pProposition">🤔 Et on parle quelle langue ?</p>
+            <p className="pProposition">🤔 On parle quelle langue là-bas ?</p>
             <label htmlFor="language">
               <input
                 className="input2"
@@ -155,17 +153,6 @@ export default function Proposition() {
               />
             </label>
           </div>
-        </div>
-        <div className="divcheckbox">
-          <p className="pProposition">☀️❄️ On l'emmène été comme hiver ?</p>
-          <label htmlFor="seasonal">
-            <input
-              className="inputCheckbox"
-              type="checkbox"
-              name="seasonal"
-              onChange={(e) => setSaisonnier(e.target.value)}
-            />
-          </label>
         </div>
         <div className="divButt">
           <input className="inputButton" type="submit" value="C'est parti !" />

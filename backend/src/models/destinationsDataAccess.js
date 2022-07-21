@@ -17,9 +17,6 @@ exports.getUnique = async (destinationId) => {
   try {
     return await prisma.destination.findUnique({
       where: { id: parseInt(destinationId, 10) },
-      include: {
-        objet: true,
-      },
     });
     // eslint-disable-next-line no-useless-catch
   } catch (e) {
@@ -39,16 +36,8 @@ exports.createOne = async (destination) => {
         langue: destination.langue,
         devise: destination.devise,
         description: destination.description,
-        objet: {
-          connectOrCreate: {
-            where: { nom: destination.nom },
-            create: {
-              nom: destination.nom,
-              categorie: destination.categorie,
-              saisonnier: destination.saisonnier,
-            },
-          },
-        },
+        objnom: destination.objnom,
+        objcategorie: destination.objcategorie,
       },
     });
     // eslint-disable-next-line no-useless-catch
@@ -70,16 +59,8 @@ exports.updateOne = async (destinationId, destination) => {
         langue: destination.langue,
         devise: destination.devise,
         description: destination.description,
-        objet: {
-          connectOrCreate: {
-            where: { nom: destination.nom },
-            create: {
-              nom: destination.nom,
-              categorie: destination.categorie,
-              saisonnier: destination.saisonnier,
-            },
-          },
-        },
+        objnom: destination.objnom,
+        objcategorie: destination.objcategorie,
       },
     });
     // eslint-disable-next-line no-useless-catch
