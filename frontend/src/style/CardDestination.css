@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 0.5em 0.5em 0.5em;
-    background-color: rgb(38, 70, 83);
+    background-color: #264653;
     border-radius: 5px;
     box-shadow: rgba(38, 70, 83, 0.815) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -38,4 +38,24 @@
     color: #E9C46A;
     text-align: end;
     margin-bottom: .5em;
+}
+.btnPut, .btnDel{
+    align-self: center;
+    width: 60%;
+    height: 2em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.btnPut{
+    margin-top: 1em;
+    margin-bottom: .5em;
+    background-color: #E9C46A;
+    color: #264653;
+    font-weight: 600;
+}
+.btnDel{
+    color:#E9C46A;
+    border: 1px solid #E9C46A;
+    background-color: #264653;
 }
