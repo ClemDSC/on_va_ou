@@ -20,5 +20,4 @@ model destination {
   description   String  @db.VarChar(1000)
   objnom        String  @db.VarChar(255)
   objcategorie  String  @db.VarChar(255)
-  objsaisonnier Boolean @default(false)
 }

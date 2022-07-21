@@ -38,7 +38,6 @@ exports.createOne = async (destination) => {
         description: destination.description,
         objnom: destination.objnom,
         objcategorie: destination.objcategorie,
-        objsaisonnier: destination.objsaisonnier,
       },
     });
     // eslint-disable-next-line no-useless-catch
@@ -62,7 +61,6 @@ exports.updateOne = async (destinationId, destination) => {
         description: destination.description,
         objnom: destination.objnom,
         objcategorie: destination.objcategorie,
-        objsaisonnier: destination.objsaisonnier,
       },
     });
     // eslint-disable-next-line no-useless-catch
