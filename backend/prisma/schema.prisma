@@ -15,8 +15,8 @@ model destination {
   langue      String  @db.VarChar(255)
   devise      String  @db.VarChar(255)
   description String  @db.VarChar(1000)
-  objet       objet?  @relation(fields: [objId], references: [id])
   objId       Int?
+  objet       objet?  @relation(fields: [objId], references: [id], onDelete: Cascade, onUpdate: Cascade)
 }
 
 model objet {

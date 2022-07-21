@@ -34,6 +34,7 @@ exports.getOne = async (req, res) => {
 };
 
 exports.createOne = async (req, res) => {
+  // console.log(req.body)
   if (!req.body) {
     res.sendStatus(400);
   } else {
