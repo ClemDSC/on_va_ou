@@ -1,6 +1,26 @@
 .pageProposition {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+.titleProposition{
+  text-align: center;
+  color: #264653;
+  margin-bottom: 1em;
+}
+.ptitleProposition{
+  text-align: center;
+  color: #264653;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.pProposition{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: .5em;
 }
 .hikerman {
   width: 100%;
@@ -8,4 +28,32 @@
 .formProposition {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.input{
+  border: none;
+  border-radius: 5px;
+  width: 80vw;
+  height: 2em;
+  margin-bottom: .2em;
+}
+.divcheckbox{
+  display: flex;
+  align-items: center;
+}
+.inputCheckbox{
+  margin-top: 1em;
+  margin-bottom: .5em;
+  margin-left: 1em;
+}
+.inputButton{
+  border: none;
+  border-radius: 5px;
+  width: 40vw;
+  height: 2em;
+  background-color: #2A9D8F;
+  color: whitesmoke;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 2.5em;
 }

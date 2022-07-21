@@ -49,11 +49,14 @@ export default function Proposition() {
 
   return (
     <div className="pageProposition">
-      <h2>Tu souhaites partager une destination ?</h2>
-      <p>À toi de jouer !</p>
+      <h2 className="titleProposition">PARTAGE UNE DESTINATION</h2>
+      <p className="ptitleProposition">
+        Tu adores une ville ou un pays, et tu souhaites faire découvrir cette
+        destination au monde entier ? <br />À toi de jouer !
+      </p>
       <img className="hikerman" src={Hikerman} alt="hikerman" />
       <form className="formProposition" onSubmit={postProposition}>
-        <p>On part où ?</p>
+        <p className="pProposition">🌎 On part où ?</p>
         <label htmlFor="continent">
           <input
             className="input"
@@ -81,7 +84,9 @@ export default function Proposition() {
             placeholder="Ville"
           />
         </label>
-        <p>Et on parle quelle langue ? (Une seule proposition)</p>
+        <p className="pProposition">
+          🤔 Et on parle quelle langue ? (Une seule proposition)
+        </p>
         <label htmlFor="language">
           <input
             className="input"
@@ -91,7 +96,7 @@ export default function Proposition() {
             placeholder="Langue parlée"
           />
         </label>
-        <p>On utilise quelle devise ?</p>
+        <p className="pProposition">💵 On utilise quelle devise ?</p>
         <label htmlFor="devise">
           <input
             className="input"
@@ -101,9 +106,9 @@ export default function Proposition() {
             placeholder="Euro, Dollar Américain..."
           />
         </label>
-        <p>
-          Explique-nous en quelques mots pourquoi cette destination est géniale
-          :
+        <p className="pProposition">
+          😍 Explique-nous en quelques mots pourquoi cette destination est
+          géniale :
         </p>
         <label htmlFor="description">
           <input
@@ -114,7 +119,9 @@ export default function Proposition() {
             placeholder="Description"
           />
         </label>
-        <p>Un objet indispensable à ne pas oublier ?</p>
+        <p className="pProposition">
+          🎒 Un objet indispensable à ne pas oublier ?
+        </p>
         <label htmlFor="name">
           <input
             className="input"
@@ -124,8 +131,8 @@ export default function Proposition() {
             placeholder="L'incontournable"
           />
         </label>
-        <p>
-          Et cet incontournable, c'est plutôt un accessoire, un document, un
+        <p className="pProposition">
+          🧢 Et cet incontournable, c'est plutôt un accessoire, un document, un
           vêtement ?
         </p>
         <label htmlFor="category">
@@ -137,16 +144,18 @@ export default function Proposition() {
             placeholder="..."
           />
         </label>
-        <p>On l'emmène été comme hiver ?</p>
-        <label htmlFor="seasonal">
-          <input
-            className="input"
-            type="checkbox"
-            name="seasonal"
-            onChange={(e) => setSaisonnier(e.target.value)}
-          />
-        </label>
-        <input type="submit" value="C'est parti !" />
+        <div className="divcheckbox">
+          <p className="pProposition">☀️❄️ On l'emmène été comme hiver ?</p>
+          <label htmlFor="seasonal">
+            <input
+              className="inputCheckbox"
+              type="checkbox"
+              name="seasonal"
+              onChange={(e) => setSaisonnier(e.target.value)}
+            />
+          </label>
+        </div>
+        <input className="inputButton" type="submit" value="C'est parti !" />
         <ToastContainer
           position="bottom-right"
           autoClose={4000}
