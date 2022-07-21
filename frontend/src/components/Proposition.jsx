@@ -57,93 +57,105 @@ export default function Proposition() {
       <img className="hikerman" src={Hikerman} alt="hikerman" />
       <form className="formProposition" onSubmit={postProposition}>
         <p className="pProposition">🌎 On part où ?</p>
-        <label htmlFor="continent">
-          <input
-            className="input"
-            type="text"
-            name="continent"
-            onChange={(e) => setContinent(e.target.value)}
-            placeholder="Continent"
-          />
-        </label>
-        <label htmlFor="country">
-          <input
-            className="input"
-            type="text"
-            name="country"
-            onChange={(e) => setPays(e.target.value)}
-            placeholder="Pays"
-          />
-        </label>
-        <label htmlFor="city">
-          <input
-            className="input"
-            type="text"
-            name="city"
-            onChange={(e) => setVille(e.target.value)}
-            placeholder="Ville"
-          />
-        </label>
-        <p className="pProposition">
-          🤔 Et on parle quelle langue ? (Une seule proposition)
-        </p>
-        <label htmlFor="language">
-          <input
-            className="input"
-            type="text"
-            name="language"
-            onChange={(e) => setLangue(e.target.value)}
-            placeholder="Langue parlée"
-          />
-        </label>
-        <p className="pProposition">💵 On utilise quelle devise ?</p>
-        <label htmlFor="devise">
-          <input
-            className="input"
-            type="text"
-            name="devise"
-            onChange={(e) => setDevise(e.target.value)}
-            placeholder="Euro, Dollar Américain..."
-          />
-        </label>
+        <div className="divLieu">
+          <label htmlFor="continent">
+            <input
+              className="input"
+              type="text"
+              name="continent"
+              onChange={(e) => setContinent(e.target.value)}
+              placeholder="Continent"
+            />
+          </label>
+          <label htmlFor="country">
+            <input
+              className="input"
+              type="text"
+              name="country"
+              onChange={(e) => setPays(e.target.value)}
+              placeholder="Pays"
+            />
+          </label>
+          <label htmlFor="city">
+            <input
+              className="input"
+              type="text"
+              name="city"
+              onChange={(e) => setVille(e.target.value)}
+              placeholder="Ville"
+            />
+          </label>
+        </div>
+        <div className="divLangDevise">
+          <div className="divLangDeviseUnique">
+            <p className="pProposition">🤔 Et on parle quelle langue ?</p>
+            <label htmlFor="language">
+              <input
+                className="input2"
+                type="text"
+                name="language"
+                onChange={(e) => setLangue(e.target.value)}
+                placeholder="Langue parlée"
+              />
+            </label>
+          </div>
+          <div>
+            <p className="pProposition">💵 On utilise quelle devise ?</p>
+            <label htmlFor="devise">
+              <input
+                className="input2"
+                type="text"
+                name="devise"
+                onChange={(e) => setDevise(e.target.value)}
+                placeholder="Euro, Dollar Américain..."
+              />
+            </label>
+          </div>
+        </div>
         <p className="pProposition">
           😍 Explique-nous en quelques mots pourquoi cette destination est
           géniale :
         </p>
         <label htmlFor="description">
           <input
-            className="input"
+            className="input3"
             type="text"
             name="description"
             onChange={(e) => setDescription(e.target.value)}
             placeholder="Description"
           />
         </label>
-        <p className="pProposition">
-          🎒 Un objet indispensable à ne pas oublier ?
-        </p>
-        <label htmlFor="name">
-          <input
-            className="input"
-            type="text"
-            name="name"
-            onChange={(e) => setNom(e.target.value)}
-            placeholder="L'incontournable"
-          />
-        </label>
-        <p className="pProposition">
-          🧢 Et cet incontournable, c'est plutôt un accessoire, un document, un
-          vêtement ?
-        </p>
-        <label htmlFor="category">
-          <input
-            className="input"
-            type="text"
-            name="category"
-            onChange={(e) => setCategorie(e.target.value)}
-            placeholder="..."
-          />
-        </label>
+        <div className="divObjet">
+          <div className="divObjetUnit">
+            <p className="pProposition">
+              🎒 Un objet indispensable <br />à ne pas oublier ?
+            </p>
+            <label htmlFor="name">
+              <input
+                className="input"
+                type="text"
+                name="name"
+                onChange={(e) => setNom(e.target.value)}
+                placeholder="L'incontournable"
+              />
+            </label>
+          </div>
+          <div className="divObjetUnit">
+            <p className="pProposition">
+              🧢 Et cet incontournable, c'est plutôt un accessoire, un document,
+              un vêtement ?
+            </p>
+            <label htmlFor="category">
+              <input
+                className="input"
+                type="text"
+                name="category"
+                onChange={(e) => setCategorie(e.target.value)}
+                placeholder="..."
+              />
+            </label>
+          </div>
+        </div>
         <div className="divcheckbox">
           <p className="pProposition">☀️❄️ On l'emmène été comme hiver ?</p>
           <label htmlFor="seasonal">
@@ -155,7 +167,9 @@ export default function Proposition() {
             />
           </label>
         </div>
-        <input className="inputButton" type="submit" value="C'est parti !" />
+        <div className="divButt">
+          <input className="inputButton" type="submit" value="C'est parti !" />
+        </div>
         <ToastContainer
           position="bottom-right"
           autoClose={4000}

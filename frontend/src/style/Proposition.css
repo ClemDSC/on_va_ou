@@ -1,26 +1,28 @@
+@import "../App.css";
+
 .pageProposition {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: .5em;
-  margin-right: .5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
-.titleProposition{
+.titleProposition {
   text-align: center;
   color: #264653;
   margin-bottom: 1em;
 }
-.ptitleProposition{
+.ptitleProposition {
   text-align: center;
   color: #264653;
   font-weight: bold;
   margin-bottom: 1em;
 }
-.pProposition{
+.pProposition {
   text-align: center;
   font-weight: bold;
   margin-top: 1em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 .hikerman {
   width: 100%;
@@ -30,30 +32,106 @@
   flex-direction: column;
   align-items: center;
 }
-.input{
+.input,
+.input2,
+.input3 {
   border: none;
   border-radius: 5px;
   width: 80vw;
   height: 2em;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.divcheckbox{
+.divLieu,
+.divLangDevise,
+.divObjet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.divLangDeviseUnique,
+.divObjetUnit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.divcheckbox {
   display: flex;
   align-items: center;
 }
-.inputCheckbox{
+.inputCheckbox {
   margin-top: 1em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   margin-left: 1em;
 }
-.inputButton{
+.inputButton {
   border: none;
   border-radius: 5px;
   width: 40vw;
-  height: 2em;
-  background-color: #2A9D8F;
+  height: 2.5em;
+  background-color: #2a9d8f;
   color: whitesmoke;
   font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   margin-top: 1em;
   margin-bottom: 2.5em;
+}
+
+@media screen and (min-width: 767.98px) {
+  .hikerman{
+    width: 80vw;
+    margin-bottom: .5em;
+  }
+  .divLieu {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5em;
+    border-bottom: 1px solid #264653;
+    padding-bottom: 1em;
+  }
+  .divLangDevise {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5em;
+    border-bottom: 1px solid #264653;
+    padding-bottom: 1em;
+  }
+  .divObjet {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    margin: 1em 1em 0 1em;
+    border-top: 1px solid #264653;
+  }
+  .divObjetUnit {
+    width: 45%;
+  }
+  .input {
+    width: 30vw;
+    height: 2.5em;
+  }
+  .input2 {
+    width: 40vw;
+    height: 2.5em;
+  }
+  .input3 {
+    height: 2.5em;
+  }
+  .divcheckbox {
+    padding-bottom: 0.5em;
+  }
+  .divButt {
+    padding-top: 1.5em;
+    border-top: 1px solid #264653;
+  }
+  .inputButton {
+    margin-top: 0;
+    width: 20vw;
+    height: 2.5em;
+    font-size: large;
+    cursor: pointer;
+  }
+  .inputButton:hover {
+    transform: translateY(0px) scale(1.05);
+  }
 }
