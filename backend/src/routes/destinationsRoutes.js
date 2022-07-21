@@ -6,9 +6,9 @@ const { validateDestination } = require("../middleware/validateDestination");
 
 const router = express.Router();
 
-router.get("/", validateDestination, destinationsController.getAll);
+router.get("/", destinationsController.getAll);
 router.get("/:id", destinationsController.getOne);
-router.post("/", destinationsController.createOne);
+router.post("/", validateDestination, destinationsController.createOne);
 router.put("/:id", validateDestination, destinationsController.updateOne);
 router.delete("/:id", destinationsController.deleteOne);
 
