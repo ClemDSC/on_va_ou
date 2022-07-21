@@ -4,9 +4,9 @@ export default function CardDestination({ destination }) {
   return (
     <div className="divCardDestindation">
       <div className="card-info">
-        <h3 className="titleDestination">{destination.continent}</h3>
+        <h3 className="titleDestination">{destination.ville}</h3>
         <h4 className="subtitleDestination">
-          {destination.pays} ({destination.ville})
+          {destination.pays} ({destination.continent})
         </h4>
       </div>
       <img
