@@ -1,7 +1,13 @@
+# Checkpoint 4 - June 2022
+
+Checkpoint made, in 48 hours, at the end of training at the Wild Code School.
+This application allows you to post destination ideas in the form of a summary map.
+Each user has the option of deleting or modifying these cards if the information is incorrect or obsolete.
+
 ## Concept
 
-This template is meant to serve as a foundation for every P2/P3 following the React-Express-MySQL stack, as learned in Wild Code School.
-It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying as simple as possible to use.
+>> This template is meant to serve as a foundation, as learned in Wild Code School.
+It's pre-configured with a set of tools.
 
 ## Setup & Use
 
@@ -10,7 +16,9 @@ It's pre-configured with a set of tools which'll help students produce industry-
 - In VSCode, install plugins **Prettier - Code formatter** and **ESLint** and configure them
 - Clone this repo, enter it
 - Run command `npm run setup`
-- _NB: To launch the backend server, you'll need an environment file with database credentials. You'll find a template one in `backend/.env.sample`_
+- In backend :
+> To launch the backend server, you'll need an environment file with database credentials. You'll find a template one in `backend/.env.sample`
+> Run command `npx prisma migrate dev`
 
 ### Available Commands
 
@@ -22,8 +30,6 @@ It's pre-configured with a set of tools which'll help students produce industry-
 - `lint` : Runs validation tools, and refuses unclean code (will be executed on every _commit_)
 - `fix` : Fixes linter errors (run it if `lint` growls on your code !)
 
-## FAQ
-
 ### Tools
 
 - _Concurrently_ : Allows for several commands to run concurrently in the same CLI
@@ -33,3 +39,10 @@ It's pre-configured with a set of tools which'll help students produce industry-
 - _Prettier_ : "Quality of code" tool as well, focuses on the styleguide
 - _ Airbnb Standard_ : One of the most known "standards", even though it's not officially linked to ES/JS
 - _Nodemon_ : Allows to restart the server everytime a .js file is udated
+
+- _Axios_ : Promise-based HTTP client for browser and node.js
+- _Joi_ : Helps to control the input fields
+- _React-router_ : A tool that allows you to handle routes in a web app, using dynamic routing
+- _React-router-dom_
+- _React-dom_ : Used at the top level of a web app to enable an efficient way of managing DOM elements of the web page
+- _Prisma_ : Model your data in the Prisma schema in a human-readable format

@@ -19,6 +19,10 @@
 .subtitleDestination{
     margin-top: 0;
     margin-bottom: 1em;
+    font-weight: 500;
+}
+.picCard{
+    margin-bottom: .5em;
 }
 .card-bio{
     margin-left: 1em;

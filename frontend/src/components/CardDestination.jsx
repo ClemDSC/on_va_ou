@@ -1,12 +1,26 @@
 import "../style/CardDestination.css";
 /* eslint-disable react/prop-types */
+import axios from "axios";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export default function CardDestination({ destination }) {
+  const ToastDeleteDestination = () => toast.success("Destination supprimée !");
+  const deleteDestination = (e) => {
+    e.preventDefault();
+    axios.delete(
+      `${import.meta.env.VITE_BACKEND_URL}/destinations/${destination.id}`
+    );
+    ToastDeleteDestination();
+  };
+
   return (
     <div className="divCardDestindation">
       <div className="card-info">
-        <h3 className="titleDestination">{destination.continent}</h3>
+        <h3 className="titleDestination">{destination.ville}</h3>
         <h4 className="subtitleDestination">
-          {destination.pays} ({destination.ville})
+          {destination.pays} ({destination.continent})
         </h4>
       </div>
       <img
@@ -28,6 +42,28 @@ export default function CardDestination({ destination }) {
           {destination.objnom} ({destination.objcategorie})
         </p>
       </div>
+      <input
+        className="btnPut"
+        type="submit"
+        value="Modifier cette destination"
+      />
+      <input
+        className="btnDel"
+        type="submit"
+        value="Supprimer cette destination"
+        onClick={deleteDestination}
+      />
+      <ToastContainer
+        position="bottom-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 }
