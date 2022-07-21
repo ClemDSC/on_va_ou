@@ -16,10 +16,10 @@ export default function Destination() {
   }, []);
 
   return (
-    <div>
+    <div className="divlistCards">
       <ul className="listCards">
         {listDestination.map((destination) => (
-          <li key={destination.id}>
+          <li key={destination.id} className="liCard">
             <CardDestination key={destination.id} destination={destination} />
           </li>
         ))}
