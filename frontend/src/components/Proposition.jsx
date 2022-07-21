@@ -12,6 +12,7 @@ export default function Proposition() {
   const [continent, setContinent] = useState("");
   const [pays, setPays] = useState("");
   const [ville, setVille] = useState("");
+  const [photo, setPhoto] = useState("");
   const [langue, setLangue] = useState("");
   const [devise, setDevise] = useState("");
   const [description, setDescription] = useState("");
@@ -30,6 +31,7 @@ export default function Proposition() {
           continent,
           pays,
           ville,
+          photo,
           langue,
           devise,
           description,
@@ -56,33 +58,46 @@ export default function Proposition() {
       <form className="formProposition" onSubmit={postProposition}>
         <p className="pProposition">🌎 On part où ?</p>
         <div className="divLieu">
-          <label htmlFor="continent">
-            <input
-              className="input"
-              type="text"
-              name="continent"
-              onChange={(e) => setContinent(e.target.value)}
-              placeholder="Continent"
-            />
-          </label>
-          <label htmlFor="country">
-            <input
-              className="input"
-              type="text"
-              name="country"
-              onChange={(e) => setPays(e.target.value)}
-              placeholder="Pays"
-            />
-          </label>
-          <label htmlFor="city">
-            <input
-              className="input"
-              type="text"
-              name="city"
-              onChange={(e) => setVille(e.target.value)}
-              placeholder="Ville"
-            />
-          </label>
+          <div className="sousdivLieu">
+            <label htmlFor="continent">
+              <input
+                className="input"
+                type="text"
+                name="continent"
+                onChange={(e) => setContinent(e.target.value)}
+                placeholder="Continent"
+              />
+            </label>
+            <label htmlFor="country">
+              <input
+                className="input"
+                type="text"
+                name="country"
+                onChange={(e) => setPays(e.target.value)}
+                placeholder="Pays"
+              />
+            </label>
+          </div>
+          <div className="sousdivLieu">
+            <label htmlFor="city">
+              <input
+                className="input"
+                type="text"
+                name="city"
+                onChange={(e) => setVille(e.target.value)}
+                placeholder="Ville"
+              />
+            </label>
+            <label htmlFor="linkphoto">
+              <input
+                className="input"
+                type="text"
+                name="linkphoto"
+                onChange={(e) => setPhoto(e.target.value)}
+                placeholder="Lien de la photo"
+              />
+            </label>
+          </div>
         </div>
         <div className="divLangDevise">
           <div className="divLangDeviseUnique">

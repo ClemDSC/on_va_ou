@@ -11,13 +11,14 @@ datasource db {
 }
 
 model destination {
-  id            Int     @id @default(autoincrement())
-  continent     String  @db.VarChar(255)
-  pays          String  @db.VarChar(255)
-  ville         String  @db.VarChar(255)
-  langue        String  @db.VarChar(255)
-  devise        String  @db.VarChar(255)
-  description   String  @db.VarChar(1000)
-  objnom        String  @db.VarChar(255)
-  objcategorie  String  @db.VarChar(255)
+  id           Int    @id @default(autoincrement())
+  continent    String @db.VarChar(255)
+  pays         String @db.VarChar(255)
+  ville        String @db.VarChar(255)
+  photo        String @db.VarChar(1000)
+  langue       String @db.VarChar(255)
+  devise       String @db.VarChar(255)
+  description  String @db.VarChar(1000)
+  objnom       String @db.VarChar(255)
+  objcategorie String @db.VarChar(255)
 }
