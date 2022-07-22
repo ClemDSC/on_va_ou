@@ -47,4 +47,4 @@ It's pre-configured with a set of tools.
 - _React-router-dom_
 - _React-dom_ : Used at the top level of a web app to enable an efficient way of managing DOM elements of the web page
 - _Prisma_ : Model your data in the Prisma schema in a human-readable format
-- React-router : Accessible modal dialog component for React.JS
+- React-modal : Accessible modal dialog component for React.JS
