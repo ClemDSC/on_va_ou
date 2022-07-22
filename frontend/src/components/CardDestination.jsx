@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import "../style/CardDestination.css";
 /* eslint-disable react/prop-types */
 import axios from "axios";
