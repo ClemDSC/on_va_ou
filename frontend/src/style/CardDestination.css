@@ -1,61 +1,172 @@
 @import "../App.css";
 
-.divCardDestindation{
-    display: flex;
-    flex-direction: column;
-    padding: 0 0.5em 0.5em 0.5em;
-    background-color: #264653;
-    border-radius: 5px;
-    box-shadow: rgba(38, 70, 83, 0.815) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+.divCardDestindation {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5em 0.5em 0.5em;
+  background-color: #264653;
+  border-radius: 5px;
+  box-shadow: rgba(38, 70, 83, 0.815) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.card-info{
-    text-align: center;
-    color: #E9C46A;
+.card-info {
+  text-align: center;
+  color: #e9c46a;
 }
-.titleDestination{
-    margin-top: 1em;
-    margin-bottom: .3em;
+.titleDestination {
+  margin-top: 1em;
+  margin-bottom: 0.3em;
 }
-.subtitleDestination{
-    margin-top: 0;
-    margin-bottom: 1em;
-    font-weight: 500;
+.subtitleDestination {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-weight: 500;
 }
-.picCard{
-    margin-bottom: .5em;
+.picCard {
+  margin-bottom: 0.5em;
 }
-.card-bio{
-    margin-left: 1em;
-    margin-right: 1em;
+.card-bio {
+  margin-left: 1em;
+  margin-right: 1em;
 }
-.descriptionCard{
-    font-size: large;
-    font-weight: 500;
-    color: #E9C46A;
+.descriptionCard {
+  font-size: large;
+  font-weight: 500;
+  color: #e9c46a;
 }
-.reponseCard{
-    font-size: large;
-    color: #E9C46A;
-    text-align: end;
-    margin-bottom: .5em;
+.reponseCard {
+  font-size: large;
+  color: #e9c46a;
+  text-align: end;
+  margin-bottom: 0.5em;
 }
-.btnPut, .btnDel{
-    align-self: center;
-    width: 60%;
-    height: 2em;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
+.btnPut,
+.btnDel {
+  align-self: center;
+  width: 60%;
+  height: 2em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
-.btnPut{
-    margin-top: 1em;
-    margin-bottom: .5em;
-    background-color: #E9C46A;
-    color: #264653;
-    font-weight: 600;
+.btnPut {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  background-color: #e9c46a;
+  color: #264653;
+  font-weight: 600;
 }
-.btnDel{
-    color:#E9C46A;
-    border: 1px solid #E9C46A;
-    background-color: #264653;
+.btnDel {
+  color: #e9c46a;
+  border: 1px solid #e9c46a;
+  background-color: #264653;
+}
+
+.divModalOpen {
+  background-color: #264653;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+}
+.btnCloseModalOpen {
+  margin-left: 1em;
+}
+.titleUpd {
+  padding-bottom: 1em;
+  text-align: center;
+  color: #e9c46a;
+  font-size: x-large;
+}
+.formupdProposition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+.divupdLieu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+  border-bottom: 1px solid #264653;
+  padding-bottom: 1em;
+}
+.divupdLangDevise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+  border-bottom: 1px solid #264653;
+  margin-top: 1em;
+  padding-bottom: 2em;
+}
+.pupProposition {
+  color: #e9c46a;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.pupdProposition {
+  color: #e9c46a;
+  text-align: center;
+  font-weight: bold;
+
+  margin-bottom: 0.5em;
+}
+.divupdObjet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+  padding-top: 2em;
+  border-top: 1px solid #264653;
+}
+.inputUPD,
+.input2UPD,
+.input3UPD {
+  border: none;
+  border-radius: 5px;
+  width: 60vw;
+  height: 2em;
+  margin-bottom: 0.2em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.boutonUpd {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  background-color: #e9c46a;
+  color: #264653;
+  font-weight: 600;
+  border: none;
+  height: 2.5em;
+  width: 10em;
+  border-radius: 5px;
+  margin-top: 2.5em;
+  cursor: pointer;
+  box-shadow: rgba(233, 197, 106, 0.283) 0px 2px 4px 0px;
+}
+
+@media screen and (min-width: 767.98px) {
+  .divupdLieu {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .divupdLangDevise {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .divupdObjet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .inputUPD {
+    width: 40vw;
+    height: 2.5em;
+  }
+  .input2UPD {
+    width: 40vw;
+    height: 2.5em;
+  }
+  .input3UPD {
+    height: 2.5em;
+  }
 }

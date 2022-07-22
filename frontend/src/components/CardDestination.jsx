@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "../style/CardDestination.css";
 /* eslint-disable react/prop-types */
 import axios from "axios";
@@ -11,6 +12,16 @@ import Modal from "react-modal";
 Modal.setAppElement("#root");
 
 export default function CardDestination({ destination }) {
+  const [continent, setContinent] = useState("");
+  const [pays, setPays] = useState("");
+  const [ville, setVille] = useState("");
+  const [photo, setPhoto] = useState("");
+  const [langue, setLangue] = useState("");
+  const [devise, setDevise] = useState("");
+  const [description, setDescription] = useState("");
+  const [objnom, setNom] = useState("");
+  const [objcategorie, setCategorie] = useState("");
+
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleModal() {
@@ -65,10 +76,139 @@ export default function CardDestination({ destination }) {
         onRequestClose={toggleModal}
         contentLabel="Modifier cette destination"
       >
-        <div>Modifier cette destination.</div>
-        <button type="button" onClick={toggleModal}>
-          ☓
-        </button>
+        <div className="divModalOpen">
+          <button
+            className="btnCloseModalOpen"
+            type="button"
+            onClick={toggleModal}
+          >
+            ☓
+          </button>
+          <h3 className="titleUpd">
+            La description de cette destination est erronée ? À toi de jouer :
+          </h3>
+          <form className="formupdProposition">
+            <div className="divupdLieu">
+              <div className="sousdivLieu">
+                <label htmlFor="continent">
+                  <input
+                    className="inputUPD"
+                    type="text"
+                    name="continent"
+                    onChange={(e) => setContinent(e.target.value)}
+                    placeholder="Continent"
+                  />
+                </label>
+                <label htmlFor="country">
+                  <input
+                    className="inputUPD"
+                    type="text"
+                    name="country"
+                    onChange={(e) => setPays(e.target.value)}
+                    placeholder="Pays"
+                  />
+                </label>
+              </div>
+              <div className="sousdivLieu">
+                <label htmlFor="city">
+                  <input
+                    className="inputUPD"
+                    type="text"
+                    name="city"
+                    onChange={(e) => setVille(e.target.value)}
+                    placeholder="Ville"
+                  />
+                </label>
+                <label htmlFor="linkphoto">
+                  <input
+                    className="inputUPD"
+                    type="text"
+                    name="linkphoto"
+                    onChange={(e) => setPhoto(e.target.value)}
+                    placeholder="Lien de la photo"
+                  />
+                </label>
+              </div>
+            </div>
+            <div className="divupdLangDevise">
+              <div className="divLangDeviseUnique">
+                <p className="pupProposition">
+                  🤔 On parle quelle langue là-bas ?
+                </p>
+                <label htmlFor="language">
+                  <input
+                    className="input2UPD"
+                    type="text"
+                    name="language"
+                    onChange={(e) => setLangue(e.target.value)}
+                    placeholder="Langue parlée"
+                  />
+                </label>
+              </div>
+              <div>
+                <p className="pupProposition">💵 On utilise quelle devise ?</p>
+                <label htmlFor="devise">
+                  <input
+                    className="input2UPD"
+                    type="text"
+                    name="devise"
+                    onChange={(e) => setDevise(e.target.value)}
+                    placeholder="Euro, Dollar Américain..."
+                  />
+                </label>
+              </div>
+            </div>
+            <p className="pupdProposition">
+              😍 Explique-nous en quelques mots pourquoi cette destination est
+              géniale :
+            </p>
+            <label htmlFor="description">
+              <input
+                className="input3UPD"
+                type="text"
+                name="description"
+                onChange={(e) => setDescription(e.target.value)}
+                placeholder="Description"
+              />
+            </label>
+            <div className="divupdObjet">
+              <div className="divObjetUnit">
+                <p className="pupProposition">
+                  🎒 Un objet indispensable à ne pas oublier ?
+                </p>
+                <label htmlFor="name">
+                  <input
+                    className="inputUPD"
+                    type="text"
+                    name="name"
+                    onChange={(e) => setNom(e.target.value)}
+                    placeholder="L'incontournable"
+                  />
+                </label>
+              </div>
+              <div className="divObjetUnit">
+                <p className="pupProposition">
+                  🧢 Et cet incontournable, c'est plutôt un accessoire, un
+                  document, un vêtement ?
+                </p>
+                <label htmlFor="category">
+                  <input
+                    className="inputUPD"
+                    type="text"
+                    name="category"
+                    onChange={(e) => setCategorie(e.target.value)}
+                    placeholder="..."
+                  />
+                </label>
+              </div>
+            </div>
+            <input
+              className="boutonUpd"
+              type="submit"
+              value="C'est tout bon !"
+            />
+          </form>
+        </div>
       </Modal>
       <input
         className="btnDel"
