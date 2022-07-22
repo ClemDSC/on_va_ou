@@ -42,7 +42,9 @@ It's pre-configured with a set of tools.
 
 - _Axios_ : Promise-based HTTP client for browser and node.js
 - _Joi_ : Helps to control the input fields
+- _Yup_ : Helps to control the input fields
 - _React-router_ : A tool that allows you to handle routes in a web app, using dynamic routing
 - _React-router-dom_
 - _React-dom_ : Used at the top level of a web app to enable an efficient way of managing DOM elements of the web page
 - _Prisma_ : Model your data in the Prisma schema in a human-readable format
+- React-router : Accessible modal dialog component for React.JS
