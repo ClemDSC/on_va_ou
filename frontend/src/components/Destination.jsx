@@ -42,7 +42,18 @@ export default function Destination() {
           )
           .map((destination) => (
             <li key={destination.id} className="liCard">
-              <CardDestination key={destination.id} destination={destination} />
+              <CardDestination
+                keys={destination.id}
+                continentUp={destination.continent}
+                paysUp={destination.pays}
+                villeUp={destination.ville}
+                photoUp={destination.photo}
+                langueUp={destination.langue}
+                deviseUp={destination.devise}
+                descriptionUp={destination.description}
+                objnomUp={destination.objnom}
+                objcategorieUp={destination.objcategorie}
+              />
             </li>
           ))}
       </ul>

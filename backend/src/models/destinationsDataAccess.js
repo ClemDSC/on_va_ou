@@ -57,6 +57,7 @@ exports.updateOne = async (destinationId, destination) => {
         continent: destination.continent,
         pays: destination.pays,
         ville: destination.ville,
+        photo: destination.photo,
         langue: destination.langue,
         devise: destination.devise,
         description: destination.description,
