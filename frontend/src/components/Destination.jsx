@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 import CardDestination from "./CardDestination";
+import ButtonScrollToTop from "../services/ButtonScrollToTop";
 
 export default function Destination() {
   const [filterSearch, setFilterSearch] = useState([]);
@@ -57,6 +58,7 @@ export default function Destination() {
             </li>
           ))}
       </ul>
+      <ButtonScrollToTop />
     </div>
   );
 }

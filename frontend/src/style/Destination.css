@@ -39,6 +39,17 @@
 .liCard {
   list-style-type: none;
 }
+.divArrow{
+  display: flex;
+  justify-content: center;
+}
+.buttonArrow{
+  border: none;
+  background-color: rgba(233, 197, 106, 0);
+}
+.arrow{
+  background-color: none;
+}
 
 @media screen and (min-width: 767.98px) {
   .pintroFilter {

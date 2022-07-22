@@ -17,8 +17,8 @@ body {
 @font-face {
   font-family: "Mukta";
   font-weight: normal;
-  src: local("Mukta Vaani"),
-    url("../assets/fonts/Mukta-Vaani.ttf") format("truetype");
+  src: local("Mukta-Vaani"),
+    url("../src/assets/font/Mukta-Vaani.ttf") format("truetype");
 }
 @font-face {
   font-family: "Nunito";
